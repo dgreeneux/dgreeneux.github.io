@@ -1,9 +1,11 @@
-export default function ProjectCard({ title, description, tags, image }) {
+import { Link } from 'react-router-dom'
+
+export default function ProjectCard({ slug, title, description, tags, thumbnail }) {
   return (
-    <article className="project-card">
+    <Link to={`/project/${slug}`} className="project-card">
       <div className="project-image">
-        {image
-          ? <img src={image} alt={title} />
+        {thumbnail
+          ? <img src={thumbnail} alt={title} />
           : <div className="project-image-placeholder" />}
       </div>
       <div className="project-info">
@@ -17,6 +19,6 @@ export default function ProjectCard({ title, description, tags, image }) {
           </ul>
         )}
       </div>
-    </article>
+    </Link>
   )
 }

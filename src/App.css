@@ -171,3 +171,71 @@ main {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* ── Project card as link ── */
+.project-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ── Detail back link ── */
+.detail-back {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.detail-back:hover { color: var(--color-text); }
+
+/* ── Detail page ── */
+.detail {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-page);
+}
+
+.detail-header {
+  padding: var(--spacing-section) 0 3rem;
+  border-bottom: 1px solid var(--color-border);
+  max-width: 640px;
+}
+
+.detail-header h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.detail-header p {
+  font-size: 1rem;
+  color: var(--color-muted);
+  margin-bottom: 1.5rem;
+}
+
+.detail-images {
+  padding: 3rem 0 var(--spacing-section);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.detail-figure img {
+  width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.detail-figure figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  color: var(--color-muted);
+}
+
+.detail-not-found {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing-section) var(--spacing-page);
+}
