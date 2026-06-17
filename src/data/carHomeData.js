@@ -1,30 +1,32 @@
 // ─── Mobile screens ───────────────────────────────────────────────────────────
-// Replace `src: null` with your image imports once you have the files:
-//   import mob1 from '../assets/car-home/mobile-1.png'
-//   then set  src: mob1
+// Drop images into the /public folder with these exact filenames:
+//   mobile-1.png, mobile-2.png, mobile-3.png, mobile-4.png
+// That's it — no code changes needed.
+
+const base = import.meta.env.BASE_URL
 
 export const mobileScreens = [
   {
     id: 'mob-1',
-    src: null,
+    src: `${base}mobile-1.png`,
     alt: 'Step 1 – Car and drivers: enter registration plate',
     label: 'Enter reg',
   },
   {
     id: 'mob-2',
-    src: null,
+    src: `${base}mobile-2.png`,
     alt: 'Step 2 – About you: personal details',
     label: 'About you',
   },
   {
     id: 'mob-3',
-    src: null,
+    src: `${base}mobile-3.png`,
     alt: 'Step 3 – Driving history',
     label: 'Driving history',
   },
   {
     id: 'mob-4',
-    src: null,
+    src: `${base}mobile-4.png`,
     alt: 'Step 4 – Your car details (auto-populated)',
     label: 'Car details',
   },
@@ -69,13 +71,15 @@ export const mobileHotspots = [
 ]
 
 // ─── Desktop screens ──────────────────────────────────────────────────────────
+// Drop images into /public with filenames:
+//   desktop-1.png, desktop-2.png, desktop-3.png, desktop-4.png, desktop-5.png
 
 export const desktopScreens = [
-  { id: 'desk-1', src: null, alt: 'Desktop – Quote overview' },
-  { id: 'desk-2', src: null, alt: 'Desktop – Cover selection' },
-  { id: 'desk-3', src: null, alt: 'Desktop – Quote adjustments' },
-  { id: 'desk-4', src: null, alt: 'Desktop – Policy details' },
-  { id: 'desk-5', src: null, alt: 'Desktop – About you (final step)' },
+  { id: 'desk-1', src: `${base}desktop-1.png`, alt: 'Desktop – Quote overview' },
+  { id: 'desk-2', src: `${base}desktop-2.png`, alt: 'Desktop – Cover selection' },
+  { id: 'desk-3', src: `${base}desktop-3.png`, alt: 'Desktop – Quote adjustments' },
+  { id: 'desk-4', src: `${base}desktop-4.png`, alt: 'Desktop – Policy details' },
+  { id: 'desk-5', src: `${base}desktop-5.png`, alt: 'Desktop – About you (final step)' },
 ]
 
 // ─── Desktop sticky annotations ───────────────────────────────────────────────

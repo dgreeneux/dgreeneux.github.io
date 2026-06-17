@@ -35,7 +35,7 @@ function Hotspot({ hotspot }) {
   )
 }
 
-// ─── Placeholder screen (shown when src is null) ──────────────────────────────
+// ─── Placeholder screen (shown while image loads or if file is missing) ───────
 
 function PlaceholderScreen({ label, className = '', style = {} }) {
   return (
@@ -52,6 +52,12 @@ function PlaceholderScreen({ label, className = '', style = {} }) {
   )
 }
 
+function ScreenImage({ src, alt, className = '', style = {}, placeholderStyle = {} }) {
+  const [failed, setFailed] = useState(false)
+  if (failed) return <PlaceholderScreen label={alt} className={className} style={placeholderStyle} />
+  return <img src={src} alt={alt} className={className} style={style} draggable={false} onError={() => setFailed(true)} />
+}
+
 // ─── Mobile carousel ─────────────────────────────────────────────────────────
 
 function MobileCarousel() {
@@ -65,14 +71,12 @@ function MobileCarousel() {
           <div key={screen.id} className="snap-center flex-shrink-0 flex flex-col items-center">
             {/* Device mockup */}
             <div className="relative overflow-hidden" style={{ width: 264, borderRadius: 32, boxShadow: '0 32px 64px -12px rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.06)' }}>
-              {screen.src ? (
-                <img src={screen.src} alt={screen.alt} className="w-full block" draggable={false} />
-              ) : (
-                <PlaceholderScreen
-                  label={screen.alt}
-                  style={{ height: 520, background: 'linear-gradient(160deg, #eff6ff 0%, #dbeafe 100%)' }}
-                />
-              )}
+              <ScreenImage
+                src={screen.src}
+                alt={screen.alt}
+                className="w-full block"
+                placeholderStyle={{ height: 520, background: 'linear-gradient(160deg, #eff6ff 0%, #dbeafe 100%)' }}
+              />
 
               {mobileHotspots
                 .filter(h => h.screenIndex === i)
@@ -153,20 +157,12 @@ function DesktopStickyScroll() {
             key={screen.id}
             ref={el => { screenRefs.current[i].current = el }}
           >
-            {screen.src ? (
-              <img
-                src={screen.src}
-                alt={screen.alt}
-                className="w-full rounded-2xl desktop-screen-shadow"
-                draggable={false}
-              />
-            ) : (
-              <PlaceholderScreen
-                label={screen.alt}
-                className="w-full rounded-2xl desktop-screen-shadow"
-                style={{ height: 340, background: 'linear-gradient(160deg, #f8fafc 0%, #f1f5f9 100%)' }}
-              />
-            )}
+            <ScreenImage
+              src={screen.src}
+              alt={screen.alt}
+              className="w-full rounded-2xl desktop-screen-shadow"
+              placeholderStyle={{ height: 340, background: 'linear-gradient(160deg, #f8fafc 0%, #f1f5f9 100%)' }}
+            />
           </div>
         ))}
       </div>
