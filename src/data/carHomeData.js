@@ -1,39 +1,23 @@
-// ─── Mobile screens ───────────────────────────────────────────────────────────
-// Drop images into the /public folder with these exact filenames:
-//   mobile-1.png, mobile-2.png, mobile-3.png, mobile-4.png
-// That's it — no code changes needed.
+import mob1 from '../assets/MobileScreen1.png'
+import mob2 from '../assets/MobileScreen2.png'
+import mob3 from '../assets/MobileScreen3.png'
+import mob4 from '../assets/MobileScreen4.png'
+import desk1 from '../assets/DesktopScreen1.png'
+import desk2 from '../assets/DesktopScreen2.png'
+import desk3 from '../assets/DesktopScreen3.png'
+import desk4 from '../assets/DesktopScreen4.png'
+import desk5 from '../assets/DesktopScreen5.png'
 
-const base = import.meta.env.BASE_URL
+// ─── Mobile screens ───────────────────────────────────────────────────────────
 
 export const mobileScreens = [
-  {
-    id: 'mob-1',
-    src: `${base}mobile-1.png`,
-    alt: 'Step 1 – Car and drivers: enter registration plate',
-    label: 'Enter reg',
-  },
-  {
-    id: 'mob-2',
-    src: `${base}mobile-2.png`,
-    alt: 'Step 2 – About you: personal details',
-    label: 'About you',
-  },
-  {
-    id: 'mob-3',
-    src: `${base}mobile-3.png`,
-    alt: 'Step 3 – Driving history',
-    label: 'Driving history',
-  },
-  {
-    id: 'mob-4',
-    src: `${base}mobile-4.png`,
-    alt: 'Step 4 – Your car details (auto-populated)',
-    label: 'Car details',
-  },
+  { id: 'mob-1', src: mob1, alt: 'Step 1 – Car and drivers: enter registration plate', label: 'Enter reg' },
+  { id: 'mob-2', src: mob2, alt: 'Step 2 – About you: personal details', label: 'About you' },
+  { id: 'mob-3', src: mob3, alt: 'Step 3 – Driving history', label: 'Driving history' },
+  { id: 'mob-4', src: mob4, alt: 'Step 4 – Your car details (auto-populated)', label: 'Car details' },
 ]
 
 // ─── Mobile hotspot annotations ───────────────────────────────────────────────
-// x / y are percentage positions within each screen image.
 
 export const mobileHotspots = [
   {
@@ -41,49 +25,42 @@ export const mobileHotspots = [
     x: '50%',
     y: '52%',
     label: 'Smart reg lookup',
-    tooltip:
-      'One reg plate replaces 12 manual inputs via DVLA API — the single biggest drop-off reduction in the flow.',
+    tooltip: 'One reg plate replaces 12 manual inputs via DVLA API — the single biggest drop-off reduction in the flow.',
   },
   {
     screenIndex: 1,
     x: '50%',
     y: '42%',
     label: 'Progressive disclosure',
-    tooltip:
-      'Related questions are grouped and revealed in sequence, reducing perceived form length by ~60%.',
+    tooltip: 'Related questions are grouped and revealed in sequence, reducing perceived form length by ~60%.',
   },
   {
     screenIndex: 2,
     x: '50%',
     y: '36%',
     label: 'Conditional branching',
-    tooltip:
-      'Answers dynamically filter later questions — users with a clean licence skip 4 steps entirely.',
+    tooltip: 'Answers dynamically filter later questions — users with a clean licence skip 4 steps entirely.',
   },
   {
     screenIndex: 3,
     x: '50%',
     y: '30%',
     label: 'Auto-populated details',
-    tooltip:
-      'Vehicle make, model and year are shown for confirmation only — no manual entry required.',
+    tooltip: 'Vehicle make, model and year are shown for confirmation only — no manual entry required.',
   },
 ]
 
 // ─── Desktop screens ──────────────────────────────────────────────────────────
-// Drop images into /public with filenames:
-//   desktop-1.png, desktop-2.png, desktop-3.png, desktop-4.png, desktop-5.png
 
 export const desktopScreens = [
-  { id: 'desk-1', src: `${base}desktop-1.png`, alt: 'Desktop – Quote overview' },
-  { id: 'desk-2', src: `${base}desktop-2.png`, alt: 'Desktop – Cover selection' },
-  { id: 'desk-3', src: `${base}desktop-3.png`, alt: 'Desktop – Quote adjustments' },
-  { id: 'desk-4', src: `${base}desktop-4.png`, alt: 'Desktop – Policy details' },
-  { id: 'desk-5', src: `${base}desktop-5.png`, alt: 'Desktop – About you (final step)' },
+  { id: 'desk-1', src: desk1, alt: 'Desktop – Quote overview' },
+  { id: 'desk-2', src: desk2, alt: 'Desktop – Cover selection' },
+  { id: 'desk-3', src: desk3, alt: 'Desktop – Quote adjustments' },
+  { id: 'desk-4', src: desk4, alt: 'Desktop – Policy details' },
+  { id: 'desk-5', src: desk5, alt: 'Desktop – About you (final step)' },
 ]
 
 // ─── Desktop sticky annotations ───────────────────────────────────────────────
-// One entry per desktop screen — shown in the sticky left panel.
 
 export const desktopAnnotations = [
   {
