@@ -69,20 +69,31 @@ function MobileCarousel() {
       <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-8 px-10 scrollbar-hide">
         {mobileScreens.map((screen, i) => (
           <div key={screen.id} className="snap-center flex-shrink-0 flex flex-col items-center">
-            {/* Device mockup */}
-            <div className="relative overflow-hidden" style={{ width: 264, borderRadius: 32, boxShadow: '0 32px 64px -12px rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.06)' }}>
-              <ScreenImage
-                src={screen.src}
-                alt={screen.alt}
-                className="w-full block"
-                placeholderStyle={{ height: 520, background: 'linear-gradient(160deg, #eff6ff 0%, #dbeafe 100%)' }}
-              />
-
-              {mobileHotspots
-                .filter(h => h.screenIndex === i)
-                .map((hotspot, hi) => (
-                  <Hotspot key={hi} hotspot={hotspot} />
-                ))}
+            {/* Phone mockup */}
+            <div className="phone-outer">
+              {/* Dynamic Island */}
+              <div className="phone-notch" />
+              {/* Side buttons */}
+              <div className="phone-btn phone-btn-mute" />
+              <div className="phone-btn phone-btn-vol-up" />
+              <div className="phone-btn phone-btn-vol-down" />
+              <div className="phone-btn-power" />
+              {/* Scrollable screen */}
+              <div className="phone-screen">
+                <div className="relative">
+                  <ScreenImage
+                    src={screen.src}
+                    alt={screen.alt}
+                    className="w-full block"
+                    placeholderStyle={{ height: 520, background: 'linear-gradient(160deg, #eff6ff 0%, #dbeafe 100%)' }}
+                  />
+                  {mobileHotspots
+                    .filter(h => h.screenIndex === i)
+                    .map((hotspot, hi) => (
+                      <Hotspot key={hi} hotspot={hotspot} />
+                    ))}
+                </div>
+              </div>
             </div>
 
             <p className="mt-4 text-xs font-semibold text-slate-400 tracking-widest uppercase">

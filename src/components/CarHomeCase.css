@@ -39,6 +39,72 @@
 .carousel-fade-left  { background: linear-gradient(to right,  #f8fafc, transparent); }
 .carousel-fade-right { background: linear-gradient(to left, #f8fafc, transparent); }
 
+/* ── Phone mockup ────────────────────────────────────────────────────────── */
+.phone-outer {
+  position: relative;
+  width: 260px;
+  flex-shrink: 0;
+  background: #0f0f0f;
+  border-radius: 48px;
+  padding: 14px;
+  box-shadow:
+    0 0 0 1.5px #2a2a2a,
+    0 0 0 3.5px #0f0f0f,
+    0 40px 80px -16px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Scrollable screen */
+.phone-screen {
+  width: 100%;
+  height: 540px;
+  border-radius: 36px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: #fff;
+  scrollbar-width: none;
+  position: relative;
+}
+.phone-screen::-webkit-scrollbar { display: none; }
+
+/* Dynamic Island notch */
+.phone-notch {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 96px;
+  height: 28px;
+  background: #0f0f0f;
+  border-radius: 20px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* Volume buttons (left) */
+.phone-btn {
+  position: absolute;
+  background: #1c1c1c;
+  border-radius: 2px 0 0 2px;
+  width: 3.5px;
+  left: -3.5px;
+}
+.phone-btn-vol-up   { top: 108px; height: 38px; }
+.phone-btn-vol-down { top: 158px; height: 38px; }
+.phone-btn-mute     { top: 70px;  height: 24px; }
+
+/* Power button (right) */
+.phone-btn-power {
+  position: absolute;
+  background: #1c1c1c;
+  border-radius: 0 2px 2px 0;
+  width: 3.5px;
+  right: -3.5px;
+  top: 130px;
+  height: 56px;
+}
+
 /* ── Hide scrollbar ──────────────────────────────────────────────────────── */
 .scrollbar-hide {
   -ms-overflow-style: none;
