@@ -1,0 +1,47 @@
+/* ── Hotspot pulsing ring ─────────────────────────────────────────────────── */
+.hotspot-pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.45);
+  animation: hotspot-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes hotspot-pulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.7; }
+  50%       { transform: translate(-50%, -50%) scale(2.4); opacity: 0; }
+}
+
+/* ── Annotation slide-fade on change ─────────────────────────────────────── */
+.annotation-enter {
+  animation: annotation-in 0.35s ease-out both;
+}
+
+@keyframes annotation-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Desktop screen shadow (glassmorphism-lite) ───────────────────────────── */
+.desktop-screen-shadow {
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.04),
+    0 8px 24px rgba(0, 0, 0, 0.08),
+    0 24px 64px rgba(0, 0, 0, 0.06),
+    0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+/* ── Carousel fade edges ──────────────────────────────────────────────────── */
+.carousel-fade-left  { background: linear-gradient(to right,  #f8fafc, transparent); }
+.carousel-fade-right { background: linear-gradient(to left, #f8fafc, transparent); }
+
+/* ── Hide scrollbar ──────────────────────────────────────────────────────── */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar { display: none; }

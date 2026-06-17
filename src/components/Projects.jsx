@@ -4,10 +4,10 @@ import pickAndMixImg from '../assets/Pick and Mix.png'
 const projects = [
   {
     id: 1,
-    slug: 'project-one',
-    title: 'Project One',
-    description: 'A short description of what this project is, the problem it solved, and your role in it.',
-    tags: ['UX Research', 'Interaction Design'],
+    slug: 'car-home-quote-and-buy',
+    title: 'Car and home quote and buy flow',
+    description: 'A self-serve digital journey enabling customers to get a quote and purchase car and home insurance products online.',
+    tags: ['UX Design', 'Interaction Design', 'Insurance'],
     thumbnail: null,
   },
   {
