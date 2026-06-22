@@ -11,7 +11,7 @@ function Hotspot({ hotspot }) {
 
   return (
     <button
-      className="absolute z-10 focus:outline-none group"
+      className="absolute z-10 focus:outline-none appearance-none bg-transparent border-0 group"
       style={{ left: hotspot.x, top: hotspot.y, transform: 'translate(-50%, -50%)', pointerEvents: 'auto' }}
       onPointerEnter={(e) => { if (e.pointerType === 'mouse') setOpen(true) }}
       onPointerLeave={(e) => { if (e.pointerType === 'mouse') setOpen(false) }}
@@ -19,7 +19,7 @@ function Hotspot({ hotspot }) {
       aria-label={hotspot.label}
     >
       <span className="hotspot-pulse" aria-hidden="true" />
-      <span className="relative z-10 flex items-center justify-center w-5 h-5 rounded-full bg-blue-500 border-2 border-white shadow-lg" />
+      <span className="relative z-10 flex items-center justify-center w-7 h-7 rounded-full bg-blue-500" />
 
       {open && (
         <div
