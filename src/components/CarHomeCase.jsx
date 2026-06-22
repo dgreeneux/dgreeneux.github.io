@@ -254,7 +254,7 @@ export default function CarHomeCase() {
       </section>
 
       {/* Section B — Mobile */}
-      <section className="py-12 bg-slate-50">
+      <section className="py-12">
         <div className="max-w-7xl mx-auto px-4">
           <div className="mb-8">
             <p className="text-xs font-semibold text-blue-500 tracking-widest uppercase mb-3">Section B</p>
