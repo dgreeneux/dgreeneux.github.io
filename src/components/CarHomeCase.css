@@ -119,6 +119,17 @@
   height: 58px;
 }
 
+/* Hotspot overlay — sits over phone screen, outside scroll container */
+.phone-hotspot-overlay {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  pointer-events: none;
+  z-index: 15;
+}
+
 /* ── Hide scrollbar ──────────────────────────────────────────────────────── */
 .scrollbar-hide {
   -ms-overflow-style: none;

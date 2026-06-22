@@ -12,7 +12,7 @@ function Hotspot({ hotspot }) {
   return (
     <button
       className="absolute z-10 focus:outline-none group"
-      style={{ left: hotspot.x, top: hotspot.y, transform: 'translate(-50%, -50%)' }}
+      style={{ left: hotspot.x, top: hotspot.y, transform: 'translate(-50%, -50%)', pointerEvents: 'auto' }}
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
       onClick={() => setOpen(o => !o)}
@@ -78,12 +78,15 @@ function MobileCarousel() {
                     className="w-full block"
                     placeholderStyle={{ height: 520, background: 'linear-gradient(160deg, #eff6ff 0%, #dbeafe 100%)' }}
                   />
-                  {mobileHotspots
-                    .filter(h => h.screenIndex === i)
-                    .map((hotspot, hi) => (
-                      <Hotspot key={hi} hotspot={hotspot} />
-                    ))}
                 </div>
+              </div>
+              {/* Hotspot overlay — outside scroll container so tooltips aren't clipped */}
+              <div className="phone-hotspot-overlay">
+                {mobileHotspots
+                  .filter(h => h.screenIndex === i)
+                  .map((hotspot, hi) => (
+                    <Hotspot key={hi} hotspot={hotspot} />
+                  ))}
               </div>
             </div>
 
