@@ -1,12 +1,12 @@
-import mob1 from '../assets/MobileScreen1.png'
-import mob2 from '../assets/MobileScreen2.png'
-import mob3 from '../assets/MobileScreen3.png'
-import mob4 from '../assets/MobileScreen4.png'
-import desk1 from '../assets/DesktopScreen1.png'
-import desk2 from '../assets/DesktopScreen2.png'
-import desk3 from '../assets/DesktopScreen3.png'
-import desk4 from '../assets/DesktopScreen4.png'
-import desk5 from '../assets/DesktopScreen5.png'
+import mob1 from '../assets/Mob_1.png'
+import mob2 from '../assets/Mob_2.png'
+import mob3 from '../assets/Mob_3.png'
+import mob4 from '../assets/Mob_4.png'
+import desk1 from '../assets/Desk_1.png'
+import desk2 from '../assets/Desk_2.png'
+import desk3 from '../assets/Desk_3.png'
+import desk4 from '../assets/Desk_4.png'
+import desk5 from '../assets/Desk_5.png'
 
 // ─── Mobile screens ───────────────────────────────────────────────────────────
 
