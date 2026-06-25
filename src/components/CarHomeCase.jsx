@@ -212,22 +212,14 @@ export default function CarHomeCase() {
       {/* Hero */}
       <header className="py-10 border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="text-xs font-semibold text-blue-500 tracking-widest uppercase">Case Study</span>
-            <span className="text-slate-200">·</span>
-            <span className="text-xs text-slate-400">Insurance · UX Design</span>
-          </div>
+          <p className="text-xs font-semibold text-blue-500 tracking-widest uppercase mb-4">Case Study</p>
 
           <h1 className="text-5xl font-bold text-slate-900 leading-tight mb-4" style={{ maxWidth: 640 }}>
-            Car and home quote and buy flow
+            Inception to go-live in six months
           </h1>
 
-          <p className="text-xl text-slate-500 leading-relaxed" style={{ maxWidth: 520 }}>
-            A self-serve digital journey enabling customers to get a quote and purchase car and home insurance products online.
-          </p>
-
           <div className="flex flex-wrap gap-2 mt-5">
-            {['UX Design', 'Interaction Design', 'Insurance', 'B2C'].map(tag => (
+            {['Car insurance', 'House insurance', 'White labelling', 'Digital transformation', 'Responsive design', 'B2C'].map(tag => (
               <span key={tag} className="px-3 py-1 bg-slate-100 text-slate-600 text-sm rounded-full font-medium">
                 {tag}
               </span>
@@ -240,10 +232,8 @@ export default function CarHomeCase() {
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="mb-10">
-            <p className="text-xs font-semibold text-blue-500 tracking-widest uppercase mb-3">Section A</p>
-            <h2 className="text-4xl font-bold text-slate-900 mb-4">01. Empowering the User</h2>
-            <p className="text-lg text-slate-500" style={{ maxWidth: 520 }}>
-              Dynamic quote adjustments on desktop. Scroll through the screens — the panel on the left updates to explain each step as it comes into view.
+            <p className="text-lg text-slate-500 leading-relaxed" style={{ maxWidth: 640 }}>
+              During this project I successfully transitioned into a UX lead role, serving as a key pillar in the core leadership team. My primary goals were to protect project scope by effectively managing stakeholders to eliminate disruptive last-minute changes and to unblock engineering by quickly turning ambiguous requirements into implementation-ready designs. I achieved this by proactively anticipating architectural challenges and opportunities to reuse design patterns. Working closely with the BA and development teams to ensure stories were signed off and implemented punctually, I helped sustain our extremely ambitious delivery timeline.
             </p>
           </div>
           <DesktopStickyScroll />
