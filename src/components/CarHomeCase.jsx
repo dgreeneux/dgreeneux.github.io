@@ -284,6 +284,19 @@ export default function CarHomeCase() {
                 The carrier needs to extend its personal lines business within the UK through a scalable partnerships model, launching the first two partners while building a repeatable foundation for future partner onboarding. The challenge was to implement backend systems and frontend digital platform capabilities in a way that reduces the time, effort, and cost of each new partner launch — while enabling the carrier's business and IT teams to become increasingly self-sufficient.
               </p>
             </div>
+            <div className="grid grid-cols-3 gap-6 py-8 border-t border-b border-slate-100 mb-10">
+              {[
+                { metric: '≥65%', label: 'of new business premium generated online' },
+                { metric: '≤12 weeks', label: 'to onboard each new partner' },
+                { metric: '≥60%', label: 'of self-service transactions completed digitally' },
+              ].map(({ metric, label }) => (
+                <div key={metric}>
+                  <p className="text-3xl font-bold text-slate-900 mb-1">{metric}</p>
+                  <p className="text-sm text-slate-500 leading-snug">{label}</p>
+                </div>
+              ))}
+            </div>
+
             <p className="text-lg text-slate-500 leading-relaxed">
               During this project working for an industry dominating tier-1 carrier I successfully transitioned into a UX lead role, serving as a key pillar in the core leadership team. My primary goals were to protect project scope by effectively managing stakeholders to eliminate disruptive last-minute changes and to unblock engineering by quickly turning ambiguous requirements into implementation-ready designs. I achieved this by proactively anticipating architectural challenges and opportunities to reuse design patterns. Working closely with the BA and development teams to ensure stories were signed off and implemented punctually, I helped sustain our extremely ambitious delivery timeline.
             </p>
