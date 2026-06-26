@@ -301,6 +301,7 @@ export default function CarHomeCase() {
               During this project working for an industry dominating tier-1 carrier I successfully transitioned into a UX lead role, serving as a key pillar in the core leadership team. My primary goals were to protect project scope by effectively managing stakeholders to eliminate disruptive last-minute changes and to unblock engineering by quickly turning ambiguous requirements into implementation-ready designs. I achieved this by proactively anticipating architectural challenges and opportunities to reuse design patterns. Working closely with the BA and development teams to ensure stories were signed off and implemented punctually, I helped sustain our extremely ambitious delivery timeline.
             </p>
           </div>
+          <h2 className="text-4xl font-bold text-slate-900 mb-10">01. Desktop Journey</h2>
           <DesktopStickyScroll />
         </div>
       </section>
