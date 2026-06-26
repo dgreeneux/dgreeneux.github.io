@@ -284,6 +284,7 @@ export default function CarHomeCase() {
                 The carrier needs to extend its personal lines business within the UK through a scalable partnerships model, launching the first two partners while building a repeatable foundation for future partner onboarding. The challenge was to implement backend systems and frontend digital platform capabilities in a way that reduces the time, effort, and cost of each new partner launch, while enabling the carrier's business and IT teams to become increasingly self-sufficient.
               </p>
             </div>
+            <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-6">Project goals</p>
             <div className="grid grid-cols-3 gap-6 py-8 border-t border-b border-slate-100 mb-10">
               {[
                 { metric: '65%', label: 'of new business premium generated online' },
@@ -297,11 +298,12 @@ export default function CarHomeCase() {
               ))}
             </div>
 
+            <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">My role</p>
             <p className="text-lg text-slate-500 leading-relaxed mb-10">
               During this project working for an industry dominating tier-1 carrier, I successfully transitioned into a UX lead role, serving as a key pillar in the core leadership team. My primary goals were to protect project scope by effectively managing stakeholders to eliminate disruptive last-minute changes and to unblock engineering by quickly turning ambiguous requirements into implementation-ready designs. I achieved this by proactively anticipating architectural challenges and opportunities to reuse design patterns. Working closely with the BA and development teams to ensure stories were signed off and implemented punctually, I helped sustain our extremely ambitious delivery timeline.
             </p>
 
-            <div className="border-l-2 border-blue-200 pl-6">
+            <div>
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Design approach</p>
               <p className="text-lg text-slate-500 leading-relaxed">
                 The flow itself was largely inherited from the carrier's existing product, a deliberate call given the six-month delivery window. The real design challenge was adapting it to a responsive platform while building a white-label architecture future partners could adopt without custom work. I advised constraining partner theming to brand colour, system feedback colours, typography, and illustration retheming, and resisted granular component-level customisation. Leaving that door open would mean bespoke work for every new partner launch, directly undermining the scalability model.
