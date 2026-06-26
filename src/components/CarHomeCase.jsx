@@ -298,7 +298,7 @@ export default function CarHomeCase() {
             </div>
 
             <p className="text-lg text-slate-500 leading-relaxed mb-10">
-              During this project working for an industry dominating tier-1 carrier I successfully transitioned into a UX lead role, serving as a key pillar in the core leadership team. My primary goals were to protect project scope by effectively managing stakeholders to eliminate disruptive last-minute changes and to unblock engineering by quickly turning ambiguous requirements into implementation-ready designs. I achieved this by proactively anticipating architectural challenges and opportunities to reuse design patterns. Working closely with the BA and development teams to ensure stories were signed off and implemented punctually, I helped sustain our extremely ambitious delivery timeline.
+              During this project working for an industry dominating tier-1 carrier, I successfully transitioned into a UX lead role, serving as a key pillar in the core leadership team. My primary goals were to protect project scope by effectively managing stakeholders to eliminate disruptive last-minute changes and to unblock engineering by quickly turning ambiguous requirements into implementation-ready designs. I achieved this by proactively anticipating architectural challenges and opportunities to reuse design patterns. Working closely with the BA and development teams to ensure stories were signed off and implemented punctually, I helped sustain our extremely ambitious delivery timeline.
             </p>
 
             <div className="border-l-2 border-blue-200 pl-6">
