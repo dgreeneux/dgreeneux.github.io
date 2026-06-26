@@ -287,7 +287,7 @@ export default function CarHomeCase() {
             <div className="grid grid-cols-3 gap-6 py-8 border-t border-b border-slate-100 mb-10">
               {[
                 { metric: '65%', label: 'of new business premium generated online' },
-                { metric: '≤12 weeks', label: 'to onboard each new partner' },
+                { metric: '12 weeks', label: 'to onboard each new partner' },
                 { metric: '60%', label: 'of self-service transactions completed digitally' },
               ].map(({ metric, label }) => (
                 <div key={metric}>
