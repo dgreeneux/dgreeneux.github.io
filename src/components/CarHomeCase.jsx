@@ -290,7 +290,6 @@ export default function CarHomeCase() {
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4">
           <div className="mb-8">
-            <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Section B</p>
             <h2 className="text-4xl font-bold text-slate-900 mb-4">02. Frictionless Onboarding</h2>
             <p className="text-lg text-slate-500" style={{ maxWidth: 520 }}>
               Identity questions paired with smart API lookups. Hover the pulsing blue nodes to explore the key UX decisions behind each screen.
