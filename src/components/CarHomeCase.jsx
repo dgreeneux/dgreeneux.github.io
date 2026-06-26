@@ -304,7 +304,7 @@ export default function CarHomeCase() {
             <div className="border-l-2 border-blue-200 pl-6">
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Design approach</p>
               <p className="text-lg text-slate-500 leading-relaxed">
-                The flow itself was largely inherited from the carrier's existing product — a deliberate call given the six-month delivery window and FCA-approved content that couldn't be rewritten. The real design challenge was adapting it to a responsive platform while building a white-label architecture future partners could adopt without custom work. I advised constraining partner theming to brand colour, system feedback colours, typography, and illustration retheming — and resisted granular component-level customisation. Leaving that door open would mean bespoke work for every new partner launch, directly undermining the scalability model.
+                The flow itself was largely inherited from the carrier's existing product — a deliberate call given the six-month delivery window. The real design challenge was adapting it to a responsive platform while building a white-label architecture future partners could adopt without custom work. I advised constraining partner theming to brand colour, system feedback colours, typography, and illustration retheming — and resisted granular component-level customisation. Leaving that door open would mean bespoke work for every new partner launch, directly undermining the scalability model.
               </p>
             </div>
           </div>
