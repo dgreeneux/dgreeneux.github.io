@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom'
 import pickAndMixImg from '../assets/Pick and Mix.png'
 import paymentImg from '../assets/Payment.png'
 import CarHomeCase from './CarHomeCase'
+import CommercialCase from './CommercialCase'
 
 const projects = {
   'commercial-underwriters': {
@@ -18,10 +19,8 @@ const projects = {
 export default function ProjectDetail() {
   const { slug } = useParams()
 
-  // Car and home has its own dedicated case study page
-  if (slug === 'car-home-quote-and-buy') {
-    return <CarHomeCase />
-  }
+  if (slug === 'car-home-quote-and-buy') return <CarHomeCase />
+  if (slug === 'commercial-underwriters') return <CommercialCase />
 
   const project = projects[slug]
 
