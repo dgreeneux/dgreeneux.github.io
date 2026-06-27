@@ -24,7 +24,7 @@ a { color: inherit; }
 .hero {
   background: linear-gradient(150deg, #0f172a 0%, #1e293b 100%);
   border-top: 3px solid #3b82f6;
-  padding: clamp(3.5rem, 7vw, 6rem) var(--spacing-page);
+  padding: clamp(2rem, 4vw, 3rem) var(--spacing-page);
 }
 
 .hero-inner {
