@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import ProjectCard from './ProjectCard'
 import pickAndMixImg from '../assets/Pick and Mix.png'
 import carHomeThumb from '../assets/Desk_1.png'
@@ -29,12 +30,36 @@ const projects = [
   },
 ]
 
+function FeaturedCard({ slug, title, description, tags, thumbnail }) {
+  return (
+    <Link to={`/project/${slug}`} className="featured-card">
+      <div className="featured-image">
+        {thumbnail
+          ? <img src={thumbnail} alt={title} />
+          : <div className="featured-image-placeholder" />}
+      </div>
+      <div className="featured-info">
+        {tags && (
+          <ul className="project-tags" style={{ marginBottom: '1rem' }}>
+            {tags.map(tag => <li key={tag}>{tag}</li>)}
+          </ul>
+        )}
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <span className="featured-cta">View case study →</span>
+      </div>
+    </Link>
+  )
+}
+
 export default function Projects() {
+  const [featured, ...rest] = projects
   return (
     <section id="projects" className="projects">
       <h2>Selected Work</h2>
+      <FeaturedCard {...featured} />
       <div className="projects-grid">
-        {projects.map(project => (
+        {rest.map(project => (
           <ProjectCard key={project.id} {...project} />
         ))}
       </div>
