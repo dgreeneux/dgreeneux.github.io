@@ -19,6 +19,14 @@ const projects = [
     tags: ['UX Design', 'Interaction Design', 'Insurance'],
     thumbnail: pickAndMixImg,
   },
+  {
+    id: 3,
+    slug: 'accessibility-token-audit',
+    title: 'Accessibility audit tool for design tokens',
+    description: 'A NotebookLM-powered tool that reads customer JSON token files and automatically audits brand colours for WCAG 2.0 compliance across 25+ white-label brands.',
+    tags: ['Design Tooling', 'Accessibility', 'WCAG', 'AI'],
+    thumbnail: null,
+  },
 ]
 
 export default function Projects() {
