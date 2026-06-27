@@ -86,7 +86,7 @@ main {}
 /* ── Projects ── */
 .projects {
   padding: clamp(2.5rem, 5vw, 4rem) var(--spacing-page);
-  background: #f8fafc;
+  background: #eef2f7;
 }
 
 .projects-content {
@@ -115,7 +115,7 @@ main {}
   grid-template-columns: 3fr 2fr;
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.08);
   transition: transform 0.22s ease, box-shadow 0.22s ease;
   text-decoration: none;
   color: inherit;
@@ -188,7 +188,8 @@ main {}
   color: inherit;
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.05);
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.08);
   transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
