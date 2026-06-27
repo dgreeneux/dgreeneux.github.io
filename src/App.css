@@ -183,7 +183,7 @@ main {
 
 /* ── Site footer ── */
 .site-footer {
-  border-top: 1px solid var(--color-border);
+  background: linear-gradient(150deg, #0f172a 0%, #1e293b 100%);
   padding: 1.75rem var(--spacing-page);
 }
 
@@ -199,7 +199,7 @@ main {
 
 .footer-name {
   font-size: 0.8rem;
-  color: var(--color-muted);
+  color: #94a3b8;
 }
 
 .footer-links {
@@ -209,12 +209,12 @@ main {
 
 .footer-links a {
   font-size: 0.8rem;
-  color: var(--color-muted);
+  color: #94a3b8;
   text-decoration: none;
   transition: color 0.2s;
 }
 
-.footer-links a:hover { color: var(--color-text); }
+.footer-links a:hover { color: #ffffff; }
 
 /* ── Detail back link ── */
 .detail-back {
