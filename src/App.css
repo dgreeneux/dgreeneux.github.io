@@ -183,7 +183,8 @@ main {}
 
 /* ── Project card ── */
 .project-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: inherit;
   border-radius: 14px;
@@ -224,6 +225,14 @@ main {}
 .project-info {
   padding: 1.5rem;
   border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.project-info .project-tags {
+  margin-top: auto;
+  padding-top: 1rem;
 }
 
 .project-info h3 {
