@@ -10,7 +10,7 @@ const projects = [
     slug: 'car-home-quote-and-buy',
     title: 'Car and home quote and buy flow',
     description: 'A self-serve digital journey enabling customers to get a quote and purchase car and home insurance products online.',
-    tags: ['UX Design', 'Interaction Design', 'Insurance'],
+    tags: ['Quote & Buy', 'Responsive Design', 'White-label', 'B2C', 'Personal Lines'],
     thumbnail: carHomeThumb,
   },
   {
@@ -18,7 +18,7 @@ const projects = [
     slug: 'commercial-underwriters',
     title: 'Commercial Underwriters',
     description: 'Designing a pick-and-mix cover selection and payment experience for commercial insurance brokers.',
-    tags: ['UX Design', 'Interaction Design', 'Insurance'],
+    tags: ['Professional Indemnity', 'White-label', 'B2B', 'London Market', 'Multi-broker'],
     thumbnail: pickAndMixImg,
   },
   {
