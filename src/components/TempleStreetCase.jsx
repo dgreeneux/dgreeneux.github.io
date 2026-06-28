@@ -79,6 +79,11 @@ const decisions = [
     heading: 'Maps over QR codes',
     body: 'An early prototype used QR codes to link to directions. Testing surfaced the problem: parents navigating to the hospital at 6am with a sleep-deprived child in the back seat are not stopping to scan a code. Basic maps and clear street-level directions were added to the letter itself, with the recommendation that a second adult accompany the family to handle the journey.',
   },
+  {
+    step: '06',
+    heading: 'From roadmap to guide — when the format was the problem',
+    body: 'The original concept for the sleep deprivation guide was an unfolding roadmap — a single document that would walk parents through each stage step by step. In early testing it worked well at the beginning, but as parents unfolded further sections the document became cluttered and hard to follow. The linear format that made the start feel manageable made the middle feel overwhelming. The design was restructured into a conventional multi-page guide with clear section headings, letting parents navigate non-linearly and find what they needed without working through what they didn\'t.',
+  },
 ]
 
 const guidePages = [
@@ -139,7 +144,7 @@ export default function TempleStreetCase() {
             Redesigning the EEG experience for children and families
           </h1>
           <div className="flex flex-wrap gap-2 mt-5">
-            {['Healthcare', 'Service Design', 'UX Research', 'Information Design', 'Paediatric', 'Pro bono'].map(tag => (
+            {['Healthcare', 'Service Design', 'UX Research', 'Information Design', 'Paediatric', 'MA Final Project · NCAD 2021'].map(tag => (
               <span key={tag} className="px-3 py-1 bg-slate-100 text-slate-600 text-sm rounded-full font-medium">
                 {tag}
               </span>
@@ -161,7 +166,7 @@ export default function TempleStreetCase() {
 
             <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">My role</p>
             <p className="text-lg text-slate-500 leading-relaxed mb-10">
-              This was a pro bono project undertaken in partnership with the Neurophysiology Department at Children's Health Ireland. I led the end-to-end design process — from research through to validated final deliverables — producing a redesigned appointment letter, a comprehensive sleep deprivation guide for parents, and a restructured department website. The project ran under real constraints: no print budget, time-limited staff access, and a user group under significant emotional stress.
+              This was the final major project of my MA in Design at the National College of Art and Design (NCAD), undertaken in direct partnership with the Neurophysiology Department at Children's Health Ireland at Temple Street. I led the end-to-end design process — from research through to validated final deliverables — producing a redesigned appointment letter, a comprehensive sleep deprivation guide for parents, and a restructured department website. The project ran under real constraints: no print budget, time-limited staff access, and a user group under significant emotional stress.
             </p>
           </div>
         </div>

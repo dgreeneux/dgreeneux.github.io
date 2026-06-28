@@ -281,7 +281,7 @@ export default function CarHomeCase() {
             <div className="mb-10">
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">The challenge</p>
               <p className="text-lg text-slate-900 leading-relaxed font-medium">
-                The carrier needs to extend its personal lines business within the UK through a scalable partnerships model, launching the first two partners while building a repeatable foundation for future partner onboarding. The challenge was to implement backend systems and frontend digital platform capabilities in a way that reduces the time, effort, and cost of each new partner launch, while enabling the carrier's business and IT teams to become increasingly self-sufficient.
+                One of the world's largest insurers needed to validate a new model: a scalable, white-label digital platform for personal lines that could be launched in six months and replicated for each new partner without bespoke engineering work. For end customers, the existing journey had real friction — a quote table that was difficult to scan, labels and error messages that weren't clear, and a form flow that tripped users on details that should have been invisible. For the business, this was as much a proof of trust as a UX project: the carrier needed to know that a scalable white-label platform was genuinely deliverable before committing to further investment.
               </p>
             </div>
             <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-6">Project goals</p>
@@ -300,8 +300,15 @@ export default function CarHomeCase() {
 
             <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">My role</p>
             <p className="text-lg text-slate-500 leading-relaxed mb-10">
-              During this project working for an industry dominating tier-1 carrier, I led the UX effort as the most senior designer, directing the work of a supporting designer and serving as a key pillar in the core leadership team. My primary goals were to protect project scope by effectively managing stakeholders to eliminate disruptive last-minute changes and to unblock engineering by quickly turning ambiguous requirements into implementation-ready designs. One concrete example: when the customer's own UX designer proposed bespoke mid-term adjustment flows with reduced page sets for each journey type, I successfully argued against it. The work was unscoped, it would have prevented reuse of the existing submission flow, and users familiar with the quote-and-buy journey would already know the pattern. The proposal was dropped and the delivery timeline held.
+              I led the UX effort as the design lead, directing a supporting designer and serving as the UX representative in the core delivery leadership team. This was a fixed-price contract with a demanding client — scope protection was as critical as the design itself. The backlog was deliberately tight to meet the timeline, and the customer used the ambiguity in story definitions to push for additional scope at every opportunity. My job was to reason them down from their ideal state to what was actually deliverable, quickly and with clear rationale. One concrete example: when the customer's own UX designer proposed bespoke mid-term adjustment flows with reduced page sets for each journey type, I successfully argued against it. The work was unscoped, it would have prevented reuse of the existing submission flow, and users familiar with the quote-and-buy journey would already know the pattern. The proposal was dropped and the delivery timeline held.
             </p>
+
+            <div className="mb-10">
+              <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Research input</p>
+              <p className="text-lg text-slate-500 leading-relaxed">
+                The carrier provided their own research output at the start of the engagement: a mapped user journey, funnel analytics showing where users dropped off across the existing flow, and a documented list of known pain points from their internal research programme. Three findings directly shaped design decisions: significant drop-off on the quote page, user difficulty scanning the quote comparison table, and confusion caused by vague labels and error messages throughout the flow. These fed into the annotation decisions called out in the screens below.
+              </p>
+            </div>
 
             <div>
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Design approach</p>
@@ -325,6 +332,16 @@ export default function CarHomeCase() {
             </p>
           </div>
           <MobileCarousel />
+        </div>
+      </section>
+
+      {/* Outcome */}
+      <section className="py-12 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Delivery</p>
+          <p className="text-lg text-slate-900 leading-relaxed font-medium max-w-3xl">
+            The platform was delivered on schedule within a fixed-price contract. It is going live with the first partner in July 2026 — six months from project kick-off, as committed.
+          </p>
         </div>
       </section>
 

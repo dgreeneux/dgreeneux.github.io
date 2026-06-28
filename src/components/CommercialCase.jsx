@@ -126,8 +126,16 @@ export default function CommercialCase() {
             {/* My role */}
             <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">My role</p>
             <p className="text-lg text-slate-500 leading-relaxed mb-10">
-              I joined as part of the wider design team and progressively became the sole designer responsible for the submission flow and logged-in experience. My primary focus was the quote page — the most complex screen in the product — and the theming configuration system that allowed each broker brand to configure their own experience without requiring bespoke design work for each onboarding.
+              I joined as part of a design team working across the submission flow. When the design lead was reassigned mid-project, I took full ownership of all design work — becoming the sole designer responsible for the quote page (the most complex screen in the product), the logged-in portal experience, and the white-label theming configuration system that allowed each broker brand to self-configure without requiring bespoke design work per onboarding.
             </p>
+
+            {/* Discovery context */}
+            <div className="mb-10">
+              <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Discovery context</p>
+              <p className="text-lg text-slate-500 leading-relaxed">
+                Formal user research with brokers wasn't part of the engagement — discovery was conducted with internal subject matter experts who understood the product domain but weren't always empowered to make decisions on behalf of the business. The existing solution provided a useful reference point: brokers and agents were filling out paper forms and calling customers directly, with no self-service capability at all. That baseline made the design direction clear even without direct user access; the challenge was getting the details right without the usual feedback loops.
+              </p>
+            </div>
 
             {/* Design approach */}
             <div>
@@ -141,6 +149,23 @@ export default function CommercialCase() {
               <p className="text-lg text-slate-500 leading-relaxed">
                 The white-label requirement added a third constraint. The carrier was reluctant to interface directly with its broker clients, which meant we were building theming tooling for brands we had never spoken to. We resolved this the same way we handled the theming architecture: define the configurable surface clearly, limit partner theming to brand colour, typography, illustration, and content rules, and build the tooling flexible enough that brokers could self-configure within those bounds without needing a designer in the room.
               </p>
+            </div>
+          </div>
+
+          {/* Outcome */}
+          <div className="mb-16 py-8 border-t border-b border-slate-100">
+            <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-6">Outcome</p>
+            <div className="grid grid-cols-3 gap-6">
+              {[
+                { metric: '10 Nov 2025', label: 'technical go-live for the PI digital portal' },
+                { metric: '5', label: 'broker portals live by January 2026' },
+                { metric: 'BAU', label: 'platform handed to advisory support, June 2026 — active implementation complete' },
+              ].map(({ metric, label }) => (
+                <div key={metric}>
+                  <p className="text-2xl font-bold text-slate-900 mb-1">{metric}</p>
+                  <p className="text-sm text-slate-500 leading-snug">{label}</p>
+                </div>
+              ))}
             </div>
           </div>
 

@@ -114,13 +114,13 @@ export default function AccessibilityToolCase() {
             <div className="mb-10">
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">The problem</p>
               <p className="text-lg text-slate-900 leading-relaxed font-medium">
-                Configuring 25+ white-label broker brands means 25+ unique colour palettes, each defined in a JSON design token file. Checking every colour combination for WCAG compliance was entirely manual — a slow, error-prone process that caught failures too late, after configurations had already been passed to engineering.
+                Configuring 25+ white-label broker brands means 25+ unique colour palettes, each defined in a JSON design token file. A plugin tool already existed for accessibility checking, but it still required manually pulling each colour value out of the JSON file and entering it one by one before any test could be run. On a live client token file, that meant extracting values, running each check, and compiling the output by hand — a slow, error-prone process that made proper WCAG auditing something that rarely happened as thoroughly as it should.
               </p>
             </div>
 
             <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">The solution</p>
             <p className="text-lg text-slate-500 leading-relaxed">
-              A NotebookLM-powered tool that reads a customer design token JSON, extracts the key brand colour values, and automatically calculates WCAG 2.0 contrast ratios against white and black backgrounds. It flags every colour by compliance level — AAA, AA, AA18, or DNP — and delivers plain-language guidance on where each colour can and cannot safely be used. An audit that previously required manual calculation now takes seconds from a single JSON file.
+              A NotebookLM-powered tool that reads a client's design token JSON directly, knows which colour values to extract, and runs the full WCAG 2.0 audit automatically. Rather than entering values manually, I provide the JSON file and the tool produces the complete contrast report — AAA, AA, AA18, or DNP for each colour against white and black backgrounds — with plain-language guidance on where each colour can and cannot safely be used. An audit that previously required significant manual work now takes seconds from a single file. Built for my own workflow, with the intention of sharing and extending it once the core audit logic is solid.
             </p>
           </div>
 
