@@ -27,7 +27,7 @@ const projects = [
     id: 3,
     slug: 'temple-street-eeg',
     title: 'Redesigning the EEG experience for children and families',
-    description: 'A pro bono service design project with Children\'s Health Ireland — redesigning how families prepare for paediatric EEG scans, addressing a 15% slot wastage rate through research, information design, and a parent sleep deprivation guide.',
+    description: 'Redesigning how families prepare for paediatric EEG scans at Children\'s Health Ireland, addressing a 15% slot wastage rate through research, information design, and a parent sleep deprivation guide.',
     tags: ['Healthcare', 'Service Design', 'UX Research', 'Paediatric'],
     thumbnail: templeStreetThumb,
   },
