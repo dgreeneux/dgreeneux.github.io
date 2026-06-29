@@ -314,16 +314,6 @@ export default function CarHomeCase() {
               </p>
             </div>
 
-            <div className="mb-10">
-              <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Discovery artefact</p>
-              <p className="text-base text-slate-500 leading-relaxed mb-6">
-                The user flow below was captured during the discovery phase, mapping the core quote-and-buy journey at a process level before detailed design began. Used internally to align the team on scope boundaries and sequence. Specific business rules are genericised.
-              </p>
-              <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-                <img src={carHomeUserFlow} alt="Car and home quote-and-buy discovery user flow" className="w-full block" />
-              </div>
-            </div>
-
             <div>
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Design approach</p>
               <p className="text-lg text-slate-500 leading-relaxed">
