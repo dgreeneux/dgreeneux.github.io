@@ -53,7 +53,7 @@ export const commercialScreens = [
       {
         step: '01',
         heading: 'A simplified view for self-service customers',
-        body: 'Once a policy is bound, direct customers land on a dashboard showing their active covers, key dates, and documents. The view is deliberately stripped back compared to the broker-facing quote screen — customers need to understand what they have, not how it was configured. Cover names and limits are presented in plain language, with documents accessible without navigating away.',
+        body: 'Once a policy is bound, direct customers land on a dashboard showing their active covers, key dates, and documents. The view is deliberately stripped back compared to the broker-facing quote screen: customers need to understand what they have, not how it was configured. Cover names and limits are presented in plain language, with documents accessible without navigating away.',
       },
       {
         step: '02',

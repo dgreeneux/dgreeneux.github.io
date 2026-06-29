@@ -238,7 +238,7 @@ export default function TempleStreetCase() {
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Deliverable 01</p>
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Appointment letter</h2>
           <p className="text-lg text-slate-500 mb-10 max-w-2xl">
-            The original letter was text-heavy, assumed knowledge of the hospital layout, and buried critical information — contact details, cancellation policy, sleep deprivation requirements — deep in unstructured prose. The redesign reorganised content by urgency, replaced directions with a basic map, and introduced a structured table for sleep requirements by age group.
+            The original letter was text-heavy, assumed knowledge of the hospital layout, and buried critical information (contact details, cancellation policy, sleep deprivation requirements) deep in unstructured prose. The redesign reorganised content by urgency, replaced directions with a basic map, and introduced a structured table for sleep requirements by age group.
           </p>
 
           <p className="text-xs font-semibold text-slate-400 tracking-widest uppercase mb-4">Before</p>
