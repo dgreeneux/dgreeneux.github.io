@@ -4,7 +4,10 @@ import './CarHomeCase.css'
 import bearHero from '../assets/Temple Street Bear.jpg'
 import bearSetup from '../assets/Temple Street Bear_6.jpg'
 import bearReception from '../assets/Temple Street Bear_11.jpg'
-import appointmentLetter from '../assets/NewAppointmentLetter.png'
+import appointmentLetter from '../assets/UpdatedTempleStreetLetter.png'
+import websiteScreen1 from '../assets/UpdatedTempleStreetWebsite_1.png'
+import websiteScreen2 from '../assets/UpdatedTempleStreetWebsite_2.png'
+import websiteScreen3 from '../assets/UpdatedTempleStreetWebsite_3.png'
 import guideNightBefore from '../assets/EEGGUIDE_NIGHT BEFORE 2.png'
 import guideMorning from '../assets/EEGGUIDE_EEG MORNING.png'
 import guideJourney from '../assets/EEGGUIDE_JOURNEY 2.png'
@@ -279,6 +282,30 @@ export default function TempleStreetCase() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Deliverable 3 — Website */}
+      <section className="py-12 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Deliverable 03</p>
+          <h2 className="text-4xl font-bold text-slate-900 mb-4">Department website</h2>
+          <p className="text-lg text-slate-500 mb-10 max-w-2xl">
+            The department's existing web presence mirrored the problems in the letter — unstructured, difficult to scan, and lacking the practical information parents needed before the appointment. The redesign reorganised content around the parent journey, surfacing preparation requirements and contact information without requiring users to read the whole page.
+          </p>
+          <div className="space-y-6">
+            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+              <img src={websiteScreen1} alt="Redesigned Temple Street EEG department website — top of page" className="w-full block" />
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+                <img src={websiteScreen2} alt="Redesigned Temple Street EEG department website — preparation section" className="w-full block" />
+              </div>
+              <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
+                <img src={websiteScreen3} alt="Redesigned Temple Street EEG department website — contact and FAQ section" className="w-full block" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
