@@ -175,24 +175,6 @@ export default function DevUJMCase() {
         </div>
       </section>
 
-      {/* Findings deck */}
-      <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Research output</p>
-          <p className="text-lg text-slate-500 mb-8 max-w-2xl">
-            Findings were documented in a structured deck and presented to the professional services group, then shared with teams in Kuala Lumpur and Toronto.
-          </p>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-              <img src={slide1} alt="Findings deck: session overview and key themes" className="w-full block" />
-            </div>
-            <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-sm">
-              <img src={slide2} alt="Findings deck: pain points and recommendations" className="w-full block" />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Recommendations */}
       <section className="py-12 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
