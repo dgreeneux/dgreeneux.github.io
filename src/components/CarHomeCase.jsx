@@ -310,7 +310,7 @@ export default function CarHomeCase() {
             <div className="mb-10">
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Research input</p>
               <p className="text-lg text-slate-500 leading-relaxed">
-                The carrier provided their own research output at the start of the engagement: a mapped user journey, funnel analytics showing where users dropped off across the existing flow, and a documented list of known pain points from their internal research programme. Three headline findings shaped the core design decisions: quote page drop-off, difficulty scanning the comparison table, and confusion from vague labels throughout the flow. The funnel data also surfaced two specific flow changes: the product selection order was revised to put bikes before items (users were consistently adding bicycles to the items section because bikes appeared later in the flow, causing them to realise the mistake and backtrack), and multi-question form pages were restructured as natural language sentences users can review and correct, combining related inputs into a readable summary rather than a series of separate labelled fields, reducing perceived form length without removing any required questions.
+                The carrier provided their own research output at the start of the engagement: a mapped user journey, funnel analytics showing where users dropped off across the existing flow, and a documented list of known pain points from their internal research programme. Three headline findings shaped the core design decisions: quote page drop-off, difficulty scanning the comparison table, and confusion from vague labels throughout the flow. The funnel data also surfaced two specific flow changes: the product selection order was revised to put bikes before items (users were consistently adding bicycles to the items section because bikes appeared later in the flow, causing them to realise the mistake and backtrack), and multi-question form pages were restructured as natural language sentences users can review and correct. Related inputs are combined into a readable summary rather than a series of separate labelled fields, reducing perceived form length without removing any required questions.
               </p>
             </div>
 
@@ -332,7 +332,7 @@ export default function CarHomeCase() {
           <div className="mb-8">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">02. Mobile Journey</h2>
             <p className="text-lg text-slate-500">
-              With the majority of new business generated online, mobile wasn't a scaled-down desktop experience. Every screen had to work at thumb-reach, in a single session, without a safety net. Hover the pulsing blue nodes to explore the key friction points we solved.
+              With most new business expected to be transacted online, mobile wasn't a scaled-down desktop experience. Every screen had to work at thumb-reach, in a single session, without a safety net. Hover the pulsing blue nodes to explore the key friction points we solved.
             </p>
           </div>
           <MobileCarousel />

@@ -3,8 +3,6 @@ import '../tailwind.css'
 import './CarHomeCase.css'
 import sessionPic1 from '../assets/DevJourneyMapsession pic.jpg'
 import sessionPic2 from '../assets/DevJourneyMapsession pic2.jpg'
-import slide1 from '../assets/Devjourneysession-slide1.png'
-import slide2 from '../assets/Devjourneysession-slide2.png'
 
 const sessionStats = [
   { metric: '4', label: 'front-end developers from across active digital projects' },
@@ -106,7 +104,7 @@ export default function DevUJMCase() {
 
             <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">My role</p>
             <p className="text-lg text-slate-500 leading-relaxed mb-10">
-              Rather than hypothesising about what was causing the repeated work, I proposed a structured investigation: a half-day journey mapping session with the developers who had worked across these projects. I designed the session format, recruited participants, booked the space, and facilitated the day. A junior designer attended to learn the facilitation process. A senior designer based in another office joined remotely, both to contribute findings and to understand how this kind of session is structured, so they could run one with their own team.
+              Rather than hypothesising about what was causing the repeated work, I proposed a structured investigation: a half-day journey mapping session with the developers who had worked across these projects. I designed the session format, recruited participants, booked the space, and facilitated the day. A junior designer attended to learn the facilitation process. A senior designer in another office joined remotely to contribute findings and take the session format back to their own team.
             </p>
 
             {/* Session stats */}
@@ -201,7 +199,7 @@ export default function DevUJMCase() {
             The session format and materials were shared with UX designers in Kuala Lumpur and Toronto, who used them to run equivalent sessions with their own development teams independently. The findings were also presented to the wider professional services group.
           </p>
           <p className="text-lg text-slate-500 leading-relaxed">
-            The value of the session was less in producing surprising findings and more in making their cumulative cost visible and shared. Developers who had been navigating these friction points in isolation could see that their experience was structural, not personal. That shift in framing is what makes process change possible. Adoption of the specific recommendations within the Dublin team was not formally tracked; the session format itself was the lasting artefact.
+            The value of the session was less in producing surprising findings and more in making their cumulative cost visible and shared. Developers who had been navigating these friction points in isolation could see that their experience was structural, not personal. That shift in framing is what makes process change possible. Adoption of the specific recommendations within the Dublin team was not formally tracked; the session format itself was the reusable output.
           </p>
         </div>
       </section>

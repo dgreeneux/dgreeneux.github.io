@@ -17,7 +17,7 @@ function Hero() {
         <p className="hero-eyebrow">Lead UX Designer · Dublin</p>
         <h1 className="hero-name">David Greene</h1>
         <p className="hero-bio">
-          Dublin-based UX lead specialising in regulated insurance products and scalable digital platforms. I design white-label architectures that scale across multiple partners, protect scope under pressure, and maintain quality when requirements shift. I mentor designers on craft and confidence, run UX education sessions across the wider team, and have run structured research to surface process friction invisible in the backlog. MA in Design, NCAD, completed in partnership with the Neurophysiology Department at Children's Health Ireland.
+          Dublin-based UX lead specialising in regulated insurance products and scalable digital platforms. I design white-label architectures that scale across multiple partners and protect scope under pressure. I mentor designers on craft and confidence, run UX education sessions across the wider team, and have run structured research to surface process friction invisible in the backlog. I hold an MA in Design from NCAD, completed in partnership with the Neurophysiology Department at Children's Health Ireland.
         </p>
         <div className="hero-links">
           <a href="https://www.linkedin.com/in/david-m-greene/" target="_blank" rel="noopener noreferrer">LinkedIn</a>

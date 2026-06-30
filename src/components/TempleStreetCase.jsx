@@ -280,7 +280,7 @@ export default function TempleStreetCase() {
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Deliverable 02</p>
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Sleep deprivation guide</h2>
           <p className="text-lg text-slate-500 mb-10">
-            A dedicated guide for parents covering the night before the appointment, the journey to the hospital, what to expect in the department, and what to do in the event of a seizure. Content was shaped by parent-tested activity recommendations and developed in partnership with Epilepsy Ireland for the seizure safety section. Two coloring pages featuring nocturnal animals with EEG electrodes were included as a tool for children while parents read.
+            A dedicated guide for parents covering the night before the appointment, the journey to the hospital, what to expect in the department, and what to do in the event of a seizure. Content was shaped by parent-tested activity recommendations and developed in partnership with Epilepsy Ireland for the seizure safety section. Two colouring pages featuring nocturnal animals with EEG electrodes were included as a tool for children while parents read.
           </p>
 
           {/* Hospital context photos */}
@@ -373,7 +373,7 @@ export default function TempleStreetCase() {
         <div className="max-w-[1100px] mx-auto px-4">
           <h2 className="text-4xl font-bold text-slate-900 mb-4">Validation</h2>
           <p className="text-lg text-slate-500 mb-10">
-            The final guide was shared with 40 parents. Nine responded, a strong return rate for an unsolicited design validation. The appointment letter and guide were reviewed by two department staff members, who provided language feedback on the seizure section and confirmed the letter layout was a clear improvement.
+            The final guide was shared with 40 parents. Nine responded, a strong return rate for a validation study of this kind. The appointment letter and guide were reviewed by two department staff members, who provided language feedback on the seizure section and confirmed the letter layout was a clear improvement.
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
             {validationQuotes.map((q, i) => (

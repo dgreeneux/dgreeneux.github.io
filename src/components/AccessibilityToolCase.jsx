@@ -95,7 +95,7 @@ export default function AccessibilityToolCase() {
         <div className="max-w-[1100px] mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Design Tooling</p>
           <h1 className="text-5xl font-bold text-slate-900 leading-tight mb-4">
-            Accessibility audit tooling for design token files
+            Accessibility audit tool for design token files
           </h1>
           <div className="flex flex-wrap gap-2 mt-5">
             {['Design tooling', 'Accessibility', 'WCAG 2.0', 'Design tokens', 'AI', 'White labelling'].map(tag => (
@@ -115,13 +115,13 @@ export default function AccessibilityToolCase() {
             <div className="mb-10">
               <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">The problem</p>
               <p className="text-lg text-slate-900 leading-relaxed font-medium">
-                Configuring 25+ white-label broker brands means 25+ unique colour palettes, each defined in a JSON design token file. A plugin tool already existed for accessibility checking, but it still required manually pulling each colour value out of the JSON file and entering it one by one before any test could be run. On a live client token file, that meant extracting values, running each check, and compiling the output by hand, a slow, error-prone process that made proper WCAG auditing something that rarely happened as thoroughly as it should.
+                Configuring 25+ white-label broker brands means 25+ unique colour palettes, each defined in a JSON design token file. A plugin tool already existed for accessibility checking, but it still required manually pulling each colour value out of the JSON file and entering it one by one before any test could be run. On a live client token file, that meant extracting values, running each check, and compiling the output by hand, a slow, error-prone process that made thorough WCAG auditing rare in practice.
               </p>
             </div>
 
             <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">The solution</p>
             <p className="text-lg text-slate-500 leading-relaxed mb-4">
-              A NotebookLM-powered tool that reads a client's design token JSON directly, knows which colour values to extract, and runs the full WCAG 2.0 audit automatically. Rather than entering values manually, I provide the JSON file and the tool produces the complete contrast report (AAA, AA, AA18, or DNP for each colour against white and black backgrounds) with plain-language guidance on where each colour can and cannot safely be used. An audit that previously required significant manual work now takes seconds from a single file. Built for my own workflow, with the intention of sharing and extending it once the core audit logic is solid.
+              A NotebookLM-powered tool that reads a client's design token JSON directly, knows which colour values to extract, and runs the full WCAG 2.0 audit automatically. Rather than entering values manually, I provide the JSON file and the tool produces the complete contrast report (AAA, AA, AA18, or DNP for each colour against white and black backgrounds) with plain-language guidance on where each colour can and cannot safely be used. An audit that previously required significant manual work now takes seconds per brand. Built for my own workflow, with the intention of sharing and extending it once the core audit logic is solid.
             </p>
             <p className="text-sm text-slate-400 leading-relaxed">
               Note on methodology: the WCAG 2.0 contrast calculations use standard relative luminance formulas, the same underlying maths as tools like the EightShapes Contrast Grid. The contribution here is the extraction layer: rather than manually pulling colour values out of a JSON token file and entering them into a separate tool, this notebook reads the token file directly and applies those calculations automatically. The problem it solves is the manual handoff step, not the maths.
