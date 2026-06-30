@@ -275,59 +275,72 @@ export default function CarHomeCase() {
         </div>
       </header>
 
-      {/* Section A — Desktop */}
+      {/* Challenge + Project goals */}
       <section className="pt-8 pb-12 bg-white">
         <div className="max-w-[1100px] mx-auto px-4">
-          <div className="mb-16">
-            <div className="mb-10">
-              <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">The challenge</p>
-              <p className="text-lg text-slate-900 leading-relaxed font-medium">
-                One of the world's largest insurers needed to validate a new model: a scalable, white-label digital platform for personal lines that could be launched in six months and replicated for each new partner without bespoke engineering work. For end customers, the existing journey had real friction: a quote table that was difficult to scan, labels and error messages that weren't clear, and a form flow that tripped users on details that should have been invisible. For the business, this was as much a proof of trust as a UX project: the carrier needed to know that a scalable white-label platform was genuinely deliverable before committing to further investment.
-              </p>
-            </div>
-            <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-6">Project goals</p>
-            <div className="grid grid-cols-3 gap-6 py-8 border-t border-b border-slate-100 mb-10">
-              {[
-                { metric: '65%', label: 'of new business premium generated online' },
-                { metric: '12 weeks', label: 'to onboard each new partner' },
-                { metric: '60%', label: 'of self-service transactions completed digitally' },
-              ].map(({ metric, label }) => (
-                <div key={metric}>
-                  <p className="text-3xl font-bold text-slate-900 mb-1">{metric}</p>
-                  <p className="text-sm text-slate-500 leading-snug">{label}</p>
-                </div>
-              ))}
-            </div>
-
-            <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">My role</p>
-            <p className="text-lg text-slate-500 leading-relaxed mb-6">
-              I led the UX effort as the design lead, directing a supporting designer and serving as the UX representative in the core delivery leadership team. This was a fixed-price contract with a demanding client; scope protection was as critical as the design itself. The backlog was deliberately tight to meet the timeline, and the customer used the ambiguity in story definitions to push for additional scope at every opportunity. My job was to reason them down from their ideal state to what was actually deliverable, quickly and with clear rationale. One concrete example: when the customer's own UX designer proposed bespoke mid-term adjustment flows with reduced page sets for each journey type, I successfully argued against it. The work was unscoped, it would have prevented reuse of the existing submission flow, and users familiar with the quote-and-buy journey would already know the pattern. The proposal was dropped and the delivery timeline held.
+          <div className="mb-10">
+            <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">The challenge</p>
+            <p className="text-lg text-slate-900 leading-relaxed font-medium">
+              One of the world's largest insurers needed to validate a new model: a scalable, white-label digital platform for personal lines that could be launched in six months and replicated for each new partner without bespoke engineering work. For end customers, the existing journey had real friction: a quote table that was difficult to scan, labels and error messages that weren't clear, and a form flow that tripped users on details that should have been invisible. For the business, this was as much a proof of trust as a UX project: the carrier needed to know that a scalable white-label platform was genuinely deliverable before committing to further investment.
             </p>
-            <p className="text-lg text-slate-500 leading-relaxed mb-10">
-              A recurring dynamic throughout was being positioned between competing pressures: the scope ambition of the client's own UX designer, component feasibility constraints from our engineering team, and timeline protection from the project manager. My role often involved finding a position the client's designer could accept and our developers could actually build, then documenting it clearly enough that it held when the conversation resumed the following sprint. The PM and I worked closely to keep client demands within achievable increments; the engineers and I worked closely to distinguish where custom component work was genuinely warranted from where a platform default was good enough.
-            </p>
-
-            <div className="mb-10">
-              <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Research input</p>
-              <p className="text-lg text-slate-500 leading-relaxed">
-                The carrier provided their own research output at the start of the engagement: a mapped user journey, funnel analytics showing where users dropped off across the existing flow, and a documented list of known pain points from their internal research programme. Three headline findings shaped the core design decisions: quote page drop-off, difficulty scanning the comparison table, and confusion from vague labels throughout the flow. The funnel data also surfaced two specific flow changes: the product selection order was revised to put bikes before items (users were consistently adding bicycles to the items section because bikes appeared later in the flow, causing them to realise the mistake and backtrack), and multi-question form pages were restructured as natural language sentences users can review and correct. Related inputs are combined into a readable summary rather than a series of separate labelled fields, reducing perceived form length without removing any required questions.
-              </p>
-            </div>
-
-            <div>
-              <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Design approach</p>
-              <p className="text-lg text-slate-500 leading-relaxed">
-                The flow itself was largely inherited from the carrier's existing product, a deliberate call given the six-month delivery window. The real design challenge was adapting it to a responsive platform while building a white-label architecture future partners could adopt without custom work. I advised constraining partner theming to brand colour, system feedback colours, typography, and illustration retheming, and resisted granular component-level customisation. Leaving that door open would mean bespoke work for every new partner launch, directly undermining the scalability model. Decisions were also informed by analysis of the carrier's existing flow: their data identified two recurring issues: users failing date validation by entering two-digit years, and add-on selection states that weren't clear enough to give users confidence the cover had actually been applied. Both findings shaped specific design decisions, called out in the annotations below.
-              </p>
-            </div>
           </div>
+          <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-6">Project goals</p>
+          <div className="grid grid-cols-3 gap-6 py-8 border-t border-b border-slate-100">
+            {[
+              { metric: '65%', label: 'of new business premium generated online' },
+              { metric: '12 weeks', label: 'to onboard each new partner' },
+              { metric: '60%', label: 'of self-service transactions completed digitally' },
+            ].map(({ metric, label }) => (
+              <div key={metric}>
+                <p className="text-3xl font-bold text-slate-900 mb-1">{metric}</p>
+                <p className="text-sm text-slate-500 leading-snug">{label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* My role */}
+      <section className="py-12 bg-slate-50">
+        <div className="max-w-[1100px] mx-auto px-4">
+          <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">My role</p>
+          <p className="text-lg text-slate-500 leading-relaxed mb-6">
+            I led the UX effort as the design lead, directing a supporting designer and serving as the UX representative in the core delivery leadership team. This was a fixed-price contract with a demanding client; scope protection was as critical as the design itself. The backlog was deliberately tight to meet the timeline, and the customer used the ambiguity in story definitions to push for additional scope at every opportunity. My job was to reason them down from their ideal state to what was actually deliverable, quickly and with clear rationale. One concrete example: when the customer's own UX designer proposed bespoke mid-term adjustment flows with reduced page sets for each journey type, I successfully argued against it. The work was unscoped, it would have prevented reuse of the existing submission flow, and users familiar with the quote-and-buy journey would already know the pattern. The proposal was dropped and the delivery timeline held.
+          </p>
+          <p className="text-lg text-slate-500 leading-relaxed">
+            A recurring dynamic throughout was being positioned between competing pressures: the scope ambition of the client's own UX designer, component feasibility constraints from our engineering team, and timeline protection from the project manager. My role often involved finding a position the client's designer could accept and our developers could actually build, then documenting it clearly enough that it held when the conversation resumed the following sprint. The PM and I worked closely to keep client demands within achievable increments; the engineers and I worked closely to distinguish where custom component work was genuinely warranted from where a platform default was good enough.
+          </p>
+        </div>
+      </section>
+
+      {/* Research + Design approach */}
+      <section className="py-12 bg-white">
+        <div className="max-w-[1100px] mx-auto px-4">
+          <div className="mb-10">
+            <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Research input</p>
+            <p className="text-lg text-slate-500 leading-relaxed">
+              The carrier provided their own research output at the start of the engagement: a mapped user journey, funnel analytics showing where users dropped off across the existing flow, and a documented list of known pain points from their internal research programme. Three headline findings shaped the core design decisions: quote page drop-off, difficulty scanning the comparison table, and confusion from vague labels throughout the flow. The funnel data also surfaced two specific flow changes: the product selection order was revised to put bikes before items (users were consistently adding bicycles to the items section because bikes appeared later in the flow, causing them to realise the mistake and backtrack), and multi-question form pages were restructured as natural language sentences users can review and correct. Related inputs are combined into a readable summary rather than a series of separate labelled fields, reducing perceived form length without removing any required questions.
+            </p>
+          </div>
+          <div>
+            <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-3">Design approach</p>
+            <p className="text-lg text-slate-500 leading-relaxed">
+              The flow itself was largely inherited from the carrier's existing product, a deliberate call given the six-month delivery window. The real design challenge was adapting it to a responsive platform while building a white-label architecture future partners could adopt without custom work. I advised constraining partner theming to brand colour, system feedback colours, typography, and illustration retheming, and resisted granular component-level customisation. Leaving that door open would mean bespoke work for every new partner launch, directly undermining the scalability model. Decisions were also informed by analysis of the carrier's existing flow: their data identified two recurring issues: users failing date validation by entering two-digit years, and add-on selection states that weren't clear enough to give users confidence the cover had actually been applied. Both findings shaped specific design decisions, called out in the annotations below.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Desktop journey */}
+      <section className="py-12 bg-slate-50">
+        <div className="max-w-[1100px] mx-auto px-4">
           <h2 className="text-4xl font-bold text-slate-900 mb-10">01. Desktop Journey</h2>
           <DesktopStickyScroll />
         </div>
       </section>
 
-      {/* Section B — Mobile */}
-      <section className="py-12">
+      {/* Mobile journey */}
+      <section className="py-12 bg-white">
         <div className="max-w-[1100px] mx-auto px-4">
           <div className="mb-8">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">02. Mobile Journey</h2>
