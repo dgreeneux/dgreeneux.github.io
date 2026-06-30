@@ -344,7 +344,7 @@ export default function CarHomeCase() {
         <div className="max-w-[1100px] mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Delivery</p>
           <p className="text-lg text-slate-900 leading-relaxed font-medium">
-            The platform was delivered on schedule within a fixed-price contract. It is going live with the first partner in July 2026, six months from project kick-off, as committed.
+            The platform was delivered on schedule within a fixed-price contract. It is going live with the first partner in July 2026, six months from project kick-off, as committed. The three project targets — 65% of new business transacted online, 12-week partner onboarding, and 60% digital self-service — are the expected post-launch measures for the platform. With the first partner deploying in July 2026, no performance data is yet available.
           </p>
         </div>
       </section>

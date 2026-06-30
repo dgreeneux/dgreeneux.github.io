@@ -201,7 +201,7 @@ export default function DevUJMCase() {
             The session format and materials were shared with UX designers in Kuala Lumpur and Toronto, who used them to run equivalent sessions with their own development teams independently. The findings were also presented to the wider professional services group.
           </p>
           <p className="text-lg text-slate-500 leading-relaxed">
-            The value of the session was less in producing surprising findings and more in making their cumulative cost visible and shared. Developers who had been navigating these friction points in isolation could see that their experience was structural, not personal. That shift in framing is what makes process change possible.
+            The value of the session was less in producing surprising findings and more in making their cumulative cost visible and shared. Developers who had been navigating these friction points in isolation could see that their experience was structural, not personal. That shift in framing is what makes process change possible. Adoption of the specific recommendations within the Dublin team was not formally tracked; the session format itself was the lasting artefact.
           </p>
         </div>
       </section>

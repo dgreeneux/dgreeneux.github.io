@@ -375,7 +375,7 @@ export default function TempleStreetCase() {
           <p className="text-lg text-slate-500 mb-10">
             The final guide was shared with 40 parents. Nine responded, a strong return rate for an unsolicited design validation. The appointment letter and guide were reviewed by two department staff members, who provided language feedback on the seizure section and confirmed the letter layout was a clear improvement.
           </p>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
             {validationQuotes.map((q, i) => (
               <div key={i} className="bg-slate-50 rounded-2xl p-6 border border-slate-100">
                 <p className="text-base text-slate-700 leading-relaxed mb-4 italic">"{q.quote}"</p>
@@ -383,6 +383,9 @@ export default function TempleStreetCase() {
               </div>
             ))}
           </div>
+          <p className="text-base text-slate-500 leading-relaxed">
+            The materials were submitted to the Neurophysiology Department following the project's completion in 2021. Whether they have since been formally adopted has not been independently verified.
+          </p>
         </div>
       </section>
 
