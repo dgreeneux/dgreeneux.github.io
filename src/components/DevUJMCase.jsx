@@ -6,7 +6,7 @@ import sessionPic2 from '../assets/DevJourneyMapsession pic2.jpg'
 
 const sessionStats = [
   { metric: '4', label: 'front-end developers from across active digital projects' },
-  { metric: '3', label: 'UX facilitators, including a junior designer learning the process' },
+  { metric: '3', label: 'design facilitators, including a junior designer learning the process' },
   { metric: '4', label: 'systemic pain points surfaced consistently across every developer map' },
 ]
 
@@ -48,7 +48,7 @@ const recommendations = [
   {
     step: '04',
     heading: 'Token guidance documentation',
-    body: 'Clear, accessible documentation on how tokens work conceptually and how to apply them during implementation, owned by UX and maintained as a shared reference for both design and development.',
+    body: 'Clear, accessible documentation on how tokens work conceptually and how to apply them during implementation, owned by the design team and maintained as a shared reference for both design and development.',
   },
   {
     step: '05',
@@ -196,7 +196,7 @@ export default function DevUJMCase() {
         <div className="max-w-[1100px] mx-auto px-4">
           <p className="text-xs font-semibold text-blue-600 tracking-widest uppercase mb-4">Outcome</p>
           <p className="text-lg text-slate-900 leading-relaxed font-medium mb-6">
-            The session format and materials were shared with UX designers in Kuala Lumpur and Toronto, who used them to run equivalent sessions with their own development teams independently. The findings were also presented to the wider professional services group.
+            The session format and materials were shared with product designers in Kuala Lumpur and Toronto, who used them to run equivalent sessions with their own development teams independently. The findings were also presented to the wider professional services group.
           </p>
           <p className="text-lg text-slate-500 leading-relaxed">
             The value of the session was less in producing surprising findings and more in making their cumulative cost visible and shared. Developers who had been navigating these friction points in isolation could see that their experience was structural, not personal. That shift in framing is what makes process change possible. Adoption of the specific recommendations within the Dublin team was not formally tracked; the session format itself was the reusable output.

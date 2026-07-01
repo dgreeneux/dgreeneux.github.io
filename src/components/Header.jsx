@@ -4,7 +4,7 @@ export default function Header() {
       <div className="header-inner">
         <div className="header-name">
           <h1>David Greene</h1>
-          <p>Lead UX Designer</p>
+          <p>Lead Product Designer</p>
         </div>
         <nav className="header-nav">
           <a href="#projects">Work</a>

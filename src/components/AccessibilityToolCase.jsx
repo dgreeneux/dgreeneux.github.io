@@ -70,7 +70,7 @@ const insights = [
   {
     step: '03',
     heading: 'Output is immediately actionable',
-    body: 'Plain-language recommendations mean brand teams can act on findings without UX involvement in every remediation. The tool transfers knowledge, not just results: explaining what fails, why, and what to do about it.',
+    body: 'Plain-language recommendations mean brand teams can act on findings without a designer in every remediation loop. The tool transfers knowledge, not just results: explaining what fails, why, and what to do about it.',
   },
 ]
 
